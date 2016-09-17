@@ -1,0 +1,30 @@
+body {margin: 0px; font-family: arial;}
+form {margin: 0;}
+.clearfix {clear: both;}
+.fl {float: left;}
+.top-menu {height: 50px; margin: 10px; padding: 0 20px 0 20px; border: 2px solid black;}
+.top-menu__button {margin: 0 2px;float: left; line-height: 50px;}
+.top-menu__button_in {color: black; text-decoration: none; padding: 0 10px; display: block;}
+.active {background-color: #22c8f8;}
+.main-frame {width: 900px; margin: 0 auto;}
+.main-frame__title {font-size: 32px; margin: 40px 0 20px 0;}
+.project-ref {margin: 51px 0 0 15px;}
+.project__ref_blue {color: #689df9;}
+.task {height: 50px; border: 2px solid black;}
+.task__key {font-size: 24px; float: left; line-height: 50px;}
+.task__name {margin: 0 20px; line-height: 50px; width: 50px; overflow: hidden; float: left;}
+.task__name_ref-blue {color: #689df9;}
+.task__name_ref-blue:hover {color: #689df9;}
+.task__new {height: 25px; width: 80px; background: #91e4fb; margin: 12px 20px 12px 0; border-radius: 3px; text-align: center; line-height: 25px;}
+.task__drag {width: 24px; height: 24px; padding: 2px; margin: 11px 0 11px 15px; background: url(drag.png) no-repeat 50%; float: left; cursor: pointer;}
+.task__arrow-ref {height: 40px; width: 100px; margin: 3px 30px 3px 20px; float: right; border: 2px solid black; border-right: none; position: relative; display: inline-block; border-radius: 0 1px 1px 0;}
+.task__arrow-ref:hover {background: #d6d6d6;}
+.task__arrow-ref:after {content: ''; width: 0; height: 0; position: absolute; right: -12px; top: 6px; width: 28px; height: 28px; transform: rotate(45deg);}
+.task__arrow-ref:hover:after {background: #d6d6d6; z-index: -1;}
+.task__arrow-ref_in {line-height: 40px; color: black; text-decoration: none; width: 100%; display: block; text-align: center;}
+.task__arrow-ref_in:after {content: ''; width: 0; height: 0; border-top: 2px solid black; border-right: 2px solid black; position: absolute; right: -15px; top: 5px; width: 28px; height: 28px; transform: rotate(45deg);}
+.task__work {height: 25px; width: 80px; background: #fd8351; margin: 12px 20px 12px 0; border-radius: 3px; text-align: center; line-height: 25px;}
+.task__deskr {margin: 0 20px; width: 350px; height: 40px; line-height: 50px; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.add-cont {display: block; margin: 15px 20px; padding: 2px 5px; width: 90px; background-color: #e6e6e6; border: 2px solid black; border-radius: 3px; color: black; text-decoration: none;}
+.add-cont:hover {background: #d6d6d6;}
+.bord-none {border-top: none;}

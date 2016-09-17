@@ -1,0 +1,109 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link  rel="stylesheet" type="text/css" href="tasks.css">
+	<link  rel="stylesheet" type="text/css" href="modal.css">
+	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="top-menu">
+		<div class="top-menu__button">
+			<a href="projects.html" class="top-menu__button_in">Проекты</a>
+		</div>
+		<div class="top-menu__button active">
+			<a href="tasks.html" class="top-menu__button_in">Задачи</a>
+		</div>
+	</div>
+	<div class="main-frame">
+		<div class="clearfix">
+			<div class="main-frame__title fl">Задачи</div>
+			<div class="project-ref fl">
+				в проекте
+				<a href="tasks.html" class="project__ref_blue">проект 1</a>
+			</div>
+		</div>
+		<div class="task clearfix">
+			<div class="task__drag"></div>
+			<div class="task__name">
+				<a href="javascript:TaskDetail()" class="task__name_ref-blue">PRG-2</a>
+			</div>
+			<div class="task__new fl">
+				new
+			</div>
+			<div class="task__key">Задача 1</div>
+			<div class="task__deskr fl">небольшая часть описания задачи небольшая часть описания задачи</div>
+			<div class="task__arrow-ref">
+				<a class="task__arrow-ref_in" href="javascript:TaskDetail()">подробнее</a>
+			</div>
+		</div>
+		<div class="task bord-none clearfix">
+			<div class="task__drag"></div>
+			<div class="task__name">
+				<a href="javascript:TaskDetail()" class="task__name_ref-blue">PRG-1</a>
+			</div>
+			<div class="task__work fl">
+				working
+			</div>
+			<div class="task__key">Задача 2</div>
+			<div class="task__deskr fl">небольшая часть описания задачи небольшая часть описания задачи</div>
+			<div class="task__arrow-ref">
+				<a class="task__arrow-ref_in" href="javascript:TaskDetail()">подробнее</a>
+			</div>
+		</div>
+		<a class="add-cont" href="javascript:AddTask()">+ добавить</a>
+	</div>
+	<div class="add-task blackout" style="display: none;">
+		<div class="modal">
+			<div class="clearfix">
+				<div class="modal__title">Новая задача</div>
+				<a class="modal__btn-close" href="javascript:ModalHide()"></a>
+			</div>
+			<form name="add_project_form" class="clearfix" method="post" action="input1.php">
+				<span class="field_title">Название:</span>
+				<input type="text" required class="field">
+				<span class="field_title">Статус:</span>
+				<select required class="field_select">
+					<option value="новая">новая</option>
+					<option value="в работе">в работе</option>
+					<option value="выполнена">выполнена</option>
+				</select>
+				<span class="field_title">Тип задачи:</span>
+				<select required class="field_select">
+					<option value="задача">задача</option>
+					<option value="улучшение">улучшение</option>
+					<option value="баг">баг</option>
+				</select>
+				<span class="field_title">Описание:</span>
+				<textarea rows="4" class="field" style="height: auto;"></textarea>
+				<input type="submit" value="Создать" class="modal-submit">
+			</form>
+		</div>
+	</div>
+	<div class="task-detail blackout" style="display: none;">
+		<div class="modal">
+			<div class="clearfix">
+				<div class="modal__title">Редактирование задачи</div>
+				<a class="modal__btn-close" href="javascript:ModalHide()"></a>
+			</div>
+			<form name="add_project_form" class="clearfix" method="post" action="input1.php">
+				<span class="field_title">Название:</span>
+				<input type="text" required class="field">
+				<span class="field_title">Статус:</span>
+				<select required class="field_select">
+					<option value="новая">новая</option>
+					<option value="в работе">в работе</option>
+					<option value="выполнена">выполнена</option>
+				</select>
+				<span class="field_title">Тип задачи:</span>
+				<select required class="field_select">
+					<option value="задача">задача</option>
+					<option value="улучшение">улучшение</option>
+					<option value="баг">баг</option>
+				</select>
+				<span class="field_title">Описание:</span>
+				<textarea rows="4" class="field" style="height: auto;"></textarea>
+				<input type="submit" value="Сохранить" class="modal-submit">
+			</form>
+		</div>
+	</div>
+</body>
