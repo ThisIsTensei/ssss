@@ -18,3 +18,10 @@ $(document).click(function(e){
 		$('div.blackout').hide();
 	}
 });
+
+
+//$(document)
+//	.on('click', '.modal__btn-close', function(e){ $('div.blackout').hide(); })
+//	.on('click', '.modal', function(e){ return false; })
+//	.on('click', '.blackout', function(e){ $('div.blackout').hide(); })
+//;

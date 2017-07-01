@@ -2,13 +2,15 @@ body {margin: 0px; font-family: arial;}
 form {margin: 0;}
 .clearfix {clear: both;}
 .fl {float: left;}
-.top-menu {height: 50px; margin: 10px; padding: 0 20px 0 20px; border: 2px solid black;}
+.top-menu {height: 50px; margin: 10px 10px 0 10px; padding: 0 20px 0 20px; border: 2px solid black;}
 .top-menu__button {margin: 0 2px;float: left; line-height: 50px;}
 .top-menu__button_in {color: black; text-decoration: none; padding: 0 10px; display: block;}
 .active {background-color: #22c8f8;}
 .main-frame {width: 900px; margin: 0 auto;}
 .main-frame__title {font-size: 32px; margin: 40px 0 20px 0;}
 .project {height: 50px; border: 2px solid black;}
+.last {border-bottom: 2px solid black;}
+.not_first {border-top: 0;}
 .project__name {margin: 0 20px; line-height: 50px; width: 250px; overflow: hidden; float: left;}
 .project__ref_blue {color: #689df9;}
 .project__ref_blue:visited {color: #689df9;}
@@ -22,3 +24,4 @@ form {margin: 0;}
 .add-cont {display: block; margin: 15px 20px; padding: 2px 5px; width: 90px; background-color: #e6e6e6; border: 2px solid black; border-radius: 3px; color: black; text-decoration: none;}
 .add-cont:hover {background: #d6d6d6;}
 .bord-none {border-top: none;}
+.projects-count {padding: 19px 50px 0 0; float: right;}
