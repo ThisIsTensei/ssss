@@ -1,0 +1,54 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link  rel="stylesheet" type="text/css" href="projects.css">
+	<link  rel="stylesheet" type="text/css" href="modal.css">
+	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="top-menu">
+		<div class="top-menu__button active">
+			<a href="projects.html" class="top-menu__button_in">Проекты</a>
+		</div>
+		<div class="top-menu__button">
+			<a href="tasks.html" class="top-menu__button_in">Задачи</a>
+		</div>
+	</div>
+	<div class="main-frame">
+		<div class="main-frame__title">Проекты</div>
+		<div class="project">
+			<div class="project__name">
+				<a href="tasks.html" class="project__ref_blue">Проект 1</a>
+			</div>
+			<div class="project__key">PRG</div>
+			<div class="project__arrow-ref">
+				<a href="tasks.html" class="project__arrow-ref_in">Задачи</a>
+			</div>
+		</div>
+		<div class="project bord-none">
+			<div class="project__name">
+				<a href="tasks.html" class="project__ref_blue">Проект 2</a>
+			</div>
+			<div class="project__key">TST</div>
+			<div class="project__arrow-ref">
+				<a href="tasks.html" class="project__arrow-ref_in">Задачи</a>
+			</div>
+		</div>
+		<a class="add-cont" href="javascript:AddProject()">+ добавить</a>
+	</div>
+	<div class="add-project blackout" style="display: none;">
+		<div class="modal">
+			<div class="clearfix">
+				<div class="modal__title">Новый проект</div>
+				<a class="modal__btn-close" href="javascript:ModalHide()"></a>
+			</div>
+			<form name="add_project_form" class="clearfix" method="post" action="input1.php">
+				<span class="field_title">Название:</span>
+				<input type="text" class="field">
+				<span class="field_title">Ключ:</span>
+				<input type="text" class="field">
+				<input type="submit" value="Создать" class="modal_submit">
+			</form>
+		</div>
+	</div>
+</body>
